@@ -1,0 +1,523 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+/*---------------------------------------------------------------------------------------------------------------------------------------------
+BODY
+*/
+html body{
+background-color: #fff;
+}
+.header{
+	background-color: #0000/*#fffafa*/;
+}
+.navbar{
+	margin: 0px 10px;
+	padding: 8px 10px;
+}
+
+.brand a.social-top{
+   color: #000;
+   font-size: 30px;
+}
+.brand {
+padding-left: 50px;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+}
+.brand a {
+  color: #333;
+  font-size: 24px;
+  font-weight: 700;
+  opacity: 1;
+  text-decoration: none;
+}
+.checkbtn{
+	font-size: 20px;
+	color: #000;
+	float: right;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+}
+.checkbtn i.cross{
+display: none;
+}
+#check{
+	float: right;
+display: none;
+}
+
+nav ul{
+	float: right;
+	margin-right: 80px;
+	z-index: 1;
+}
+nav ul li{
+	font-family: Kiona-Regular;
+	display: inline-block;
+	line-height: 80px;
+	margin: 0 20px;
+}
+nav ul li a{
+	color: #000;
+	font-size: 20px;
+	text-transform: uppercase;
+	text-decoration: none;
+	cursor: pointer;
+	padding: 7px 13px;
+	border-radius: 3px;
+}
+nav ul li a:hover:not(.notheme){
+	background: #000;
+	color: #fff;
+	transition: 0.5s;
+	text-decoration: none;
+}
+nav ul li a.notheme:hover{
+	color: inherit;
+	transition: 0.5s;
+	text-decoration: none;
+}
+
+
+/*---------------------------------------------------------------------------------------------------------------------------------*/
+
+/* MEDIA*/
+@media (max-width: 768px){
+.brand{
+padding-left: 20px;
+}
+.checkbtn{
+  display: block;
+}
+nav ul{
+	position: fixed;
+	width: 100%;
+	height: auto;
+	background: #ffffff;
+	top: 12%;
+	left: -100%;
+	text-align: center;
+	transition: all 0.5s;
+	box-shadow: 0 2px 4px 0 #0003;
+
+}
+nav ul li{
+display: none;
+}
+#check:checked ~ ul{
+	left: 0px;
+}
+#check:checked ~ ul li{
+	display: block;
+	
+}
+#check:checked ~ .checkbtn i.bar{
+	transition: 0.5s;
+display: none;
+}
+#check:checked ~ .checkbtn i.cross{
+	transition: 0.5s;
+display: block;
+}
+}
+/*---------------------------------------------------------------------------------------------------------------------------------*/
+
+/* MAIN*/
+main{
+}
+main section{
+	height: auto;
+}
+
+main section#developer{
+	height: auto;
+}
+main section div.abt{
+}
+main section div.abt h1{
+	font-size: 80px;
+	position: relative;
+	top: 15%;
+	left: 10%;
+	text-transform: uppercase;
+	font-weight: 1000;
+}
+main section div.cont{
+	position: absolute;
+	float: left;
+	left: 4%;
+	height: 70%;
+	width: 50%;
+	overflow: hidden;
+}
+main section div.cont form{
+	position: relative;
+	text-align: center;
+	display: block;
+	margin-top: 40px;
+	justify-content: center;
+}
+.div{
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.input{
+  box-shadow: 0 2px 4px 0 #0002;
+  display: block;
+  padding: 6px;
+  width: 100%;
+  background: #ffffff;
+  font-family: Montserrat-Bold;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #666666;
+  border-radius: 22px;
+  transition: 0.5s;
+  border: none;
+  outline: none;
+}
+.input:hover{
+	box-shadow: 0 2px 4px 0 #0004;
+  transition: 0.5s;
+}
+.message-box{
+	height: 150px;
+}
+.form-btn{
+  display: flex;
+  justify-content: center;
+}
+.btn{
+  min-width: 193px;
+  height: 50px;
+  border-radius: 25px;
+  background: #57b846;
+  font-family: Montserrat-Bold;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 25px;
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+main section div.contactid{
+	position: relative;
+	left: 30%;
+	height: auto;
+	width: 40%;
+	overflow-wrap: break-word;
+	text-align: center;
+	justify-content: center;
+	display: block;
+		padding: 5px;
+	font-size: 25px;
+}
+main section div.contactid ul{
+	display: block;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+
+}
+main section div.contactid ul li{
+	position: relative;
+	list-style-type: none;
+	color: #666;
+	font-size: 27px;
+	height: 60px;
+	width: 60px;
+	background: #fff;
+	box-shadow: 0 0 1px #000;
+	line-height: 60px;
+	border-radius: 50%;
+	margin: 1em auto;
+	transition: 0.5s ease;
+}
+main section div.contactid ul li:before{
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  /* background: #d35400; */
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  z-index: -1;
+  transform: scale(0.9);
+     transition: 0.5s;
+}
+main section div.contactid ul li a{
+  text-decoration: none;
+  background: transparent;
+  color: #666;
+}
+main section div.contactid ul li:hover{
+	/*background: #fff;
+	box-shadow: 0 0 2px #000;*/
+	background: #171515;
+
+}
+main section div.contactid ul li a:hover{
+	color: #fff;
+}
+
+
+/*---------------------------------------------------------------------------------------------------------------------------------*/
+
+/* MEDIA*/
+
+/* Responsive Mobile styles
+/* ========================================== */
+@media (max-width: 800px){
+   main section div.abt h1{
+	font-size: 70px;
+}
+	}
+
+@media (max-width: 768px){
+
+main section div.cont{
+	left: 4%;
+	width: 90%;
+}
+main section div.contactid{
+		left: 0%;
+		margin-top: 90%;
+	width: 40%;
+}
+main section div.contactid h1{
+	font-size: 30px;
+	}
+	
+}
+
+@media (max-width: 560px){
+
+main section div.cont{
+	left: 4%;
+	width: 90%;
+}
+main section div.contactid{
+		left: 0%;
+		margin-top: 100%;
+	width: 40%;
+}
+main section div.contactid h1{
+	font-size: 28px;
+	}
+	
+}
+
+@media (max-width: 500px){
+main section div.contactid{
+		margin-top: 120%;
+}
+main section div.contactid h1{
+	font-size: 24px;
+	}
+	
+}
+
+
+@media (max-width: 430px){
+	main section div.abt h1{
+	font-size: 50px;
+}
+main section div.cont{
+	left: 4%;
+	width: 90%;
+}
+main section div.contactid{
+		left: 0%;
+		margin-top: 130%;
+	width: 40%;
+}
+main section div.contactid h1{
+	font-size: 20px;
+	}
+main section div.contactid h4{
+	font-size: 18px;
+	}
+main section div.contactid h2{
+	font-size: 20px;
+	}
+
+	}
+@media (max-height: 620px){
+		main section div.cont{
+	height: 110%;
+}
+  }
+  @media (max-height: 500px){
+		main section div.cont{
+	height: 150%;
+}
+  }
+
+@media (max-width: 394px){
+main section div.contactid{
+		margin-top: 150%;
+}
+main section div.contactid h1{
+	font-size: 18px;
+	}
+main section div.contactid h4{
+	font-size: 16px;
+	}
+main section div.contactid h2{
+	font-size: 18px;
+	}
+	}
+@media (max-width: 360px){
+main section div.contactid{
+		margin-top: 170%;
+}
+main section div.contactid h1{
+	font-size: 17px;
+	}
+main section div.contactid h4{
+	font-size: 15px;
+	}
+main section div.contactid h2{
+	font-size: 17px;
+	}
+	}
+@media (max-width: 300px){
+	   main section div.abt h1{
+	font-size: 40px;
+}
+main section div.cont{
+	height: 90%;
+}
+main section div.contactid{
+		margin-top: 210%;
+}
+main section div.contactid h1{
+	font-size: 14px;
+	}
+main section div.contactid h4{
+	font-size: 11px;
+	}
+main section div.contactid h2{
+	font-size: 14px;
+	}
+
+	}
+
+/* Responsive tablet styles
+/* ========================================== */
+@media (min-width: 900px){
+main section div.cont{
+	top: 25%;
+	left: 8%;
+}
+}
+
+/* Responsive laptop styles
+/* ========================================== */
+@media (min-width: 1300px){
+   main section div.abt h1{
+	font-size: 90px;
+}
+main section div.cont{
+	top: 30%;
+}
+
+	}
+/*---------------------------------------------------------------------------------------------------------------------------------*/
+
+/* FOOTER */
+/*
+.footer {
+  background-color: #f5f5f5;
+}
+*/
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+footer{
+   position: relative;
+	padding: 20px;
+	text-decoration: none;
+	font-family: Quicksand-Light;
+}
+footer ul{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+footer ul li{
+	text-align: center;
+	position: relative;
+	display: block;
+	color: #666;
+	font-size: 15px;
+	height: 40px;
+	width: 40px;
+	/*background: #171515;*/
+	background: #fff;
+	box-shadow: 0 0 1px #000;
+	line-height: 40px;
+	border-radius: 50%;
+	margin: 0 10px;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+footer ul li:before{
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  /* background: #d35400; */
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  z-index: -1;
+  transform: scale(0.9);
+     transition: 0.5s;
+}
+footer ul li a{
+  text-decoration: none;
+  background: transparent;
+  color: #666;
+}
+footer ul li:hover{
+	/*background: #fff;
+	box-shadow: 0 0 2px #000;*/
+	background: #171515;
+
+}
+footer ul li a:hover{
+	color: #fff;
+}
+footer p{
+	text-align: center;
+} 
+footer p a{
+	color: #141414;
+	font-weight: 600;
+} 
+footer p a:hover{
+	color: #171515;
+} 
